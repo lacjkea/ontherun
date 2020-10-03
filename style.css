@@ -1,26 +1,124 @@
 .hero {
     background-size: cover;
     background-position: 50% 100%;
-    background-image: url(img/header.jpg);
+    background-image: url(img/baggrund.png);
+    height: 100vh;
+}
+
+.handsfullbody {
+    background-size: cover;
+    background-position: 50% 100%;
+    background-image: url(img/hands.jpg);
     height: 100vh;
 }
 
 .konkurrence {
     background-size: cover;
     background-image: url(img/teksturkonkurrence.jpg);
-    height: 100vh;
+    height: 100%;
+    color: #0737A8;
+}
+
+.takemewithyou {
+    background-size: cover;
+    height: 105vh;
+    background-position: 20% 50%;
+    background-image: url(img/takemewithyou.jpg);
+}
+
+.img-fluid {
+    max-height: 105vh;
+}
+
+.col1 {
+    background: #E6EBE8;
+    height: 105vh;
+}
+
+.col2 {
+    background: #EFECE0;
+    color: #0737A8;
+    height: 105vh;
+}
+
+.col3 {
+    background: #D4D2BA;
+    color: #0737A8;
+    height: 105vh;
+}
+
+.col4 {
+    color: #0737A8;
+    height: 105vh;
+}
+
+.col5 {
+
+    background-color: #E2D3C5;
+    color: #0737A8;
+    height: 105vh;
+}
+
+.col6 {
+    background: #EFECE0;
+    height: 100%;
 }
 
 
+
 .card {
+    background-color: transparent;
+    border: none;
+}
+
+.card1 {
     border-radius: 0px;
-    border: 1.2px solid blue;
+    border: 2px solid #0737A8;
     background-color: transparent;
 }
 
 .h-100 {
     height: 80vh;
 }
+
+.spin {
+    margin-top: 10rem;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.slide-fwd-center {
+    -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+    animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+}
+
+@keyframes slide-fwd-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(200px);
+        transform: translateZ(200px);
+    }
+}
+
+
+
 
 h1 {
     font-family: "Menlo", sans-serif;
@@ -30,20 +128,47 @@ h2 {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 3rem;
     letter-spacing: 0.3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
 }
 
 
 h3 {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
-      font-weight: bold;
-    font-size: 2rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+
+h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 7rem;
+    padding-left: 3rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+    font-family: "Menlo", sans-serif;
 }
 
 p {
     font-family: "Menlo", sans-serif;
     font-size: 1.2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+a {
+    color: #0737A8;
+    letter-spacing: 0.1rem;
 }
 
 label {
@@ -53,10 +178,14 @@ label {
 
 .display-4 {
     font-size: 1.5rem;
-    color: blue;
+    color: #0737A8;
     text-transform: uppercase;
-    padding: 7rem;
+    padding-top: 6rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 6rem;
     text-align: center;
+    font-weight: bold;
 }
 
 .col {
@@ -65,7 +194,7 @@ label {
 
 footer {
     height: 15vh;
-    background-color: blue;
+    background-color: #0737A8;
     text-decoration: none;
 }
 
@@ -78,27 +207,56 @@ a:hover {
     color: black;
 }
 
-button, .btn {
-  background: #DEE4E0;
-  text-align: center;
-  text-decoration: none;
-  font-style: "Menlo";
-  letter-spacing: 1px;
-  color: #0737A8;
-  text-transform: uppercase;
-  transition: all 0.2s ease;
-  cursor: pointer;
+
+.form-control {
+    background-color: transparent;
+    font-style: "Menlo";
+    color:#0737A8;
+    border-radius: 0rem;
+    border: 1px solid #0737A8;
+}
+
+.form-check-input {
+    background-color: transparent;
+    font-style: "Menlo";
+    color:#0737A8;
+    border: 1px solid #0737A8;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0em;
+}
+
+
+button,
+.btn {
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    font-style: "Menlo";
+    letter-spacing: 1px;
+    color: #0737A8;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 1px solid #0737A8;
+    border-radius: 0rem;
 }
 
 button:hover {
-  background-color: white;
-  transform: scale(1.1);
+    color: #0737A8;
+    transform: scale(1.1);
 }
 
 button:active {
-  background-color: black;
+    background-color: black;
 }
 
 .navbar-toggler {
     border: none;
+}
+
+.logo-brand {
+    left: 50%;
+    transform: translate(-50%, 30%);
 }
